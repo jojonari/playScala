@@ -1,0 +1,11 @@
+@(members: List[Member])(implicit message: Messages)
+
+@main("list") {
+    @for(member <- members){
+        <p>순서 : @member.mid</p>
+        <p>아이디 : @member.userid</p>
+        <p>비밀번호 : @member.password</p>
+        <p>닉네임 : @member.nickName</p>
+        <p>메일주소 : @member.email</p>
+    }
+}
